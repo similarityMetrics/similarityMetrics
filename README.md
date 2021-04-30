@@ -21,6 +21,13 @@ research@server:~/dev/similarityMetrics$ time python3 -W ignore simmetrics.py --
 ```
 This will output the list of input arguments that can be passed via the command line to figure out what information needs to be included to run the simmetrics.py file.
 
+To run the similarity using attendgru embedding, the trained model needs to be downloaded in the similarityMetrics directory.
+The model can be downloaded from the following link:
+https://drive.google.com/file/d/1tDiv6kRRwydhYi8wY3Wgv_cL7Jkur-Pd/view?usp=sharing
+
+To run the similarity using inferSent encoding, follow the instructions in their official repository to download the Glove embedding and the pretrained model. The instructions can be found in the following repository:
+https://github.com/facebookresearch/InferSent
+
 ## Human Study Data
 We also include the 210 function dataset that we used in the human study in the comsdata/ directory in both pickle format and txt format.
 The raw data obtained from the human study is also made available in this repository in the final_megafile.csv file.
