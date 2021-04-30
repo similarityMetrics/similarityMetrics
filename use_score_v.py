@@ -37,7 +37,6 @@ def use(reflist, predlist, batchsize):
 		csm = cosine_similarity_score(ref_emb, pred_emb)
 		csd = csm.diagonal()
 		total_csd = np.concatenate([total_csd, csd])
-	print(len(total_csd))
 	avg_css = np.average(total_csd)
 
 	ret = ('for %s functions\n' % (len(predlist)))
